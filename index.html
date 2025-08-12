@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 		<style>
 			body{
-				background-color: #4503fc;
+				background: linear-gradient(#4503fc, #5e25fa);
 			}
 			p{
 				font-size: 20px;
@@ -26,10 +26,19 @@
 				text-decoration: none;
 				color: #fafafa;
 			}
+			html{
+				scroll-behaviour: smooth;
+			}
 		</style>
 	</head>
 	<body>
-		<h1><a href="https://gdevelop.io/">GDevelop</a></h1>
+		<nav>
+			<ul>
+				<li><a href="#main">About GDevelop</a></li>
+				<li><a href="#game">Our Game</a></li>
+			</ul>
+		</nav>
+		<h1 id="main"><a href="https://gdevelop.io/">GDevelop</a></h1>
 		<p>GDevelop is a free, open-source, no-code 2D game engine. It allows users to create games for various platforms (PC, mobile, web) without needing to write code, using a visual event-based system. It's designed to be user-friendly for both beginners and experienced game developers.</p>
 		<a><img src="download(1).jpg" height="350"></a>
 		<p>Here's a more detailed look:
@@ -47,12 +56,13 @@
 		GDevelop is also used in educational settings for teaching game development. 
 		Community and Support:
 		GDevelop has a large and active community, with tutorials, documentation, and a Discord server for support.</p>
-		<p>Gdevelop offers to make fantastic games and our team also created a game using gdevelop -</p>
+		<p id="game">Gdevelop offers to make fantastic games and our team also created a game using gdevelop -</p>
 		<br>
 		<h2><a href="https://gd.games/rockrider_rider/galactic-race" target="_blank">Galactic Race</a></h2>
 		<p>It is a great game where you are a spaceship which track it's way through the deadly areas of the space to win. You have to douge the asteroids around and the lurking monsters of space.</p>
 	</body>
 </html>
+
 
 
 
