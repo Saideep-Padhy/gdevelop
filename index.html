@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="new1.css">
 	</head>
 	<body>
-	<!--NAVGATION BAR-->
+		<!--NAVGATION BAR-->
 		<nav>
 			<ul>
 				<li><a href="#main">About GDevelop</a></li>
@@ -14,31 +14,47 @@
 			</ul>
 		</nav>
 		<!--IMAGES-->
-		<marquee>
-		<div class="si">
-			<div class="img" id="gdm">
-				<img src="gdl.png" height="345px">
-				<div class="text">
-					<p>GDevelop is a free, open-source game engine that allows users to create 2D and 3D</p>
-					<p>games without coding, using an intuitive, event-based visual programming system.</p>
+		<div class="is">
+			<div class="si">
+				<div class="img" id="gdm">
+					<img src="gdl.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi2.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi3.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi4.png" height="345px">
 				</div>
 			</div>
-			<div class="img">
-				<img src="gdi.png" height="345px">
-			</div>
-			<div class="img">
-				<img src="gdi2.png" height="345px">
-			</div>
-			<div class="img">
-				<img src="gdi3.png" height="345px">
-			</div>
-			<div class="img">
-				<img src="gdi4.png" height="345px">
+			<div aria-hidden class="si">
+				<div class="img" id="gdm">
+					<img src="gdl.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi2.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi3.png" height="345px">
+				</div>
+				<div class="img">
+					<img src="gdi4.png" height="345px">
+				</div>
 			</div>
 		</div>
-		</marquee>
 		<!--MAIN THINGS-->
 		<h1 id="main"><a href="https://gdevelop.io/">GDevelop</a></h1>
+		<p>About Gdevelop
+		Gdevelop is an event based software meaning it works on the basis of an action being performed when a certain condition is fulfilled. To make it easier for developers, the platform uses a visual coding language meaning the developers don't have to type a single line of code, however we are provided with an option to add our own text based code if we would like to go more in-depth. Gdeveop works on all platforms- Windows, Linux, MacOS, Android, iOS and even web browser. Gdevelop is an open source software thus allowing it's users to add their own features or additions to the platform in any way they want.</p>
+		<br>
 		<p>Here's a more detailed look:
 		No-Code Development:
 		GDevelop uses an event-based system where you can create game logic by combining conditions and actions visually, rather than writing traditional code. 
@@ -54,31 +70,75 @@
 		GDevelop is also used in educational settings for teaching game development. 
 		Community and Support:
 		GDevelop has a large and active community, with tutorials, documentation, and a Discord server for support.</p>
-		<p id="game">Gdevelop offers to make fantastic games and our team also created a game using gdevelop -</p>
+		<p id="game"> The marvels of Gdevelop can create many games that tickle the fancy of any crowd of people like a particular game we made called Driving Simulator:-</p>
 		<br>
-		<h2><a href="https://gd.games/rockrider_rider/galactic-race" target="_blank">Galactic Race</a></h2>
-		<marquee>
-		<div class="container">
-			<div class="img">
-				<img src="gi2.png" height="345px">
-			</div>
-			<div class="img">
-				<img src="gi1.png" height="345px">
-			</div>
-			<div class="img">
-				<img src="gi3.png" height="345px">
-			</div>
-		</div>
-		</marquee>
+		<h2>Driving Simulator</h2>
+		<br>
 		<p>It is a great game where you are a spaceship which track it's way through the deadly areas of the space to win. You have to douge the asteroids around and the lurking monsters of space.</p>
-		<button><a href="https://gd.games/rockrider_rider/galactic-race" target="_blank">Play</a></button>
+		<button>Play</button>
 	<!--CONTACT US SECTION-->
 		<div class="cu">
 			<h1>CONTACT US</h1>
-			<h3>Rohan</h3>
-			<h3>Tanish</h3>
-			<h3>Saideep</h3>
+			<button onclick="rohaninfo()">Rohan</button>
+				<dialog id="rohan">
+					<div class="wapper">
+						<p>
+						Contact no. - 9099021292
+						E-mail - rohanvijayanagaram232@gmail.com
+						</p>
+					</div>
+				</dialog>
+			<button onclick="tanishinfo()">Tanish</button>
+				<dialog id="tanish">
+					<div class="wapper">
+						<p>
+						Contact no. - 8373995550
+						E-mail - tanishgoyal0608@gmail.com
+						</p>
+					</div>
+				</dialog>
+			<button onclick="saideepinfo()">Saideep</button>
+				<dialog id="saideep">
+					<div class="wapper">
+						<p>
+						Contact no. - 9898090572
+						E-mail - saideeppadhy52@gmail.com
+						</p>
+					</div>
+				</dialog>
 		</div>
+		<script>
+			const wapper = document.querySelector(".wapper")
+			const dialog = document.getElementById("rohan")
+			function rohaninfo(){
+				dialog.showModal()
+			}
+			dialog.addEventListener("click", (e) => {
+				if(!wapper.contains(e.traget)){
+					dialog.close()
+				}
+			})
+
+			const dialog = document.getElementById("tanish")
+			function tanishinfo(){
+				dialog.showModal()
+			}
+			dialog.addEventListener("click", (e) => {
+				if(!wapper.contains(e.traget)){
+					dialog.close()
+				}
+			})
+
+			const dialog = document.getElementById("saideep")
+			function saideepinfo(){
+				dialog.showModal()
+			}
+			dialog.addEventListener("click", (e) => {
+				if(!wapper.contains(e.traget)){
+					dialog.close()
+				}
+			})
+
+		</script>
 	</body>
 </html>
-
