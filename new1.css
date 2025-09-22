@@ -37,16 +37,32 @@ nav a{
 nav a:hover{
 	background-color: #212121;
 }
+.is{
+	display: flex;
+	overflow-x: auto;
+}
+.is::-webkit-scrollbar{
+	display: none;
+}
 .si{
 	display: flex;
-	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	animation: spin 15s infinite linear;
+	padding-right: 1em;
 }
 #gdm{
 	position: relative;
 }
 .img{
+	flex: 0 0 5em;
 	margin-right: 5px;
 	margin-left: 5px;
+}
+@keyframes spin{
+	from {translate: 0;}
+	to {translate: -100%;}
 }
 .text{
 	position: absolute;
