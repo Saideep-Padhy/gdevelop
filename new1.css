@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 body{
-	background: linear-gradient(#4503fc, #5e25fa);
+	background: linear-gradient(#5e25fa, #ffffff);
 }
 a{
 	text-decoration: none;
@@ -82,13 +82,12 @@ h2{
 	color: #fafafa;
 	margin: 10px;
 }
-.cu{
+#cu{
 	background-color: #a83dff;
 	padding: 2px;
 }
-.container{
-	display: flex;
-	flex-wrap: nowrap;
+#cu h3{
+	color: white;
 }
 button{
 	margin: 10px;
@@ -101,4 +100,17 @@ button{
 button a{
 	color: black;
 }
-
+.detail{
+	background: black;
+	width: 450px;
+	height: 70px;
+	border-radius: 5px;
+	text-align: center;
+	padding: 5px;
+}
+#h1{
+	font-size: 60px;
+}
+.h3{
+	font-size: 40px;
+}
