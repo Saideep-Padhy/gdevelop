@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
 }
 body{
-	background: linear-gradient(#5e25fa, #ffffff);
+	background: linear-gradient(#ffffff, #5e25fa);
 }
 a{
 	text-decoration: none;
@@ -24,6 +25,7 @@ nav ul{
 	display: flex;
 }
 nav li{
+	font-family: Nunito;
 	height: 50px;
 }
 nav a{
@@ -61,39 +63,39 @@ nav a:hover{
 	from {translate: 0;}
 	to {translate: -100%;}
 }
-.text{
-	position: absolute;
-	top: 77%;
-	left: 0;
-	font-size: 15px;
-}
 p{
+	font-family: Nunito;
 	font-size: 20px;
 	color: #fafafa;
 	margin: 10px;
 }
 h1{
+	font-family: Nunito;
+	text-align: center;
 	font-size: 35px;
 	color: #fafafa;
 	margin: 10px;
 }
 h2{
+	font-family: Nunito;
 	font-size: 27px;
 	color: #fafafa;
 	margin: 10px;
+}
+h3{
+	font-family: Nunito;
+	font-size: 21px;
+	color: white;
 }
 #cu{
 	background-color: #a83dff;
 	padding: 2px;
 }
-#cu h3{
-	color: white;
-}
 button{
 	margin: 10px;
 	text-decoration: none;
-	height: 50px;
-	width: 100px;
+	height: 70px;
+	width: 150px;
 	border-radius: 10px;
 	color: black;
 }
@@ -102,15 +104,12 @@ button a{
 }
 .detail{
 	background: black;
-	width: 450px;
+	width: 400px;
 	height: 70px;
 	border-radius: 5px;
 	text-align: center;
-	padding: 5px;
+	padding: 2px;
 }
-#h1{
-	font-size: 60px;
-}
-.h3{
-	font-size: 40px;
+.detail p{
+	font-size: 18px;
 }
