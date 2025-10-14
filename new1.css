@@ -4,14 +4,14 @@
 	padding: 0px;
 }
 body{
-	background: linear-gradient(#ffffff, #5e25fa);
+	background: linear-gradient(#5e25fa, #ffffff);
 }
 a{
 	text-decoration: none;
 	color: #fafafa;
 }
 html{
-	scroll-behaviour: smooth;
+	scroll-behavior: smooth;
 }
 nav{
 	background-color: #000000;
@@ -85,19 +85,16 @@ h2{
 h3{
 	font-family: Nunito;
 	font-size: 21px;
-	color: white;
-}
-#cu{
-	background-color: #a83dff;
-	padding: 2px;
+	color: black;
 }
 button{
 	margin: 10px;
 	text-decoration: none;
-	height: 70px;
-	width: 150px;
+	height: 50px;
+	width: 100px;
 	border-radius: 10px;
 	color: black;
+	cursor: pointer;
 }
 button a{
 	color: black;
@@ -112,4 +109,11 @@ button a{
 }
 .detail p{
 	font-size: 18px;
+}
+#h1{
+	font-family: Nunito;
+	text-align: center;
+	font-size: 35px;
+	color: black;
+	margin: 10px;
 }
